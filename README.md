@@ -1,2 +1,4 @@
-# sophieannguo.github.io
-Portfolio
+# Sophie Guo
+
+### Projects
+Global climate analysis
