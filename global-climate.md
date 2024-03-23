@@ -1,0 +1,11 @@
+# TITLE
+
+## Sophie Guo
+
+# project description
+# problem statement
+# why it is interesting to you
+# impact
+# scope of project
+# description of variables
+# visualizations
