@@ -1,4 +1,4 @@
 # Projects
-[Global climate analysis](global-climate.html)
+[Global climate analysis](global-climate.md)
 
 # Experience
