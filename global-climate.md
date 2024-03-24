@@ -1,3 +1,5 @@
+# Global Climate
+
 # Analyzing Time Series Data: Greenhouse Gas Emissions and Global Climate Dynamics
 ## Sophie Guo
 
