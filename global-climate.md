@@ -11,7 +11,7 @@ At the core of this project lies the desire to illuminate the complex relationsh
 - Tableau
 
 ### Data Sources
-After running into several obstacles in locating comprehensive datasets, I selected the dataset provided by Our World in Data, focusing on CO2 and Greenhouse Gas Emissions. This extensive dataset holds 48,058 observations and 79 variables, covering the period from 1750 to 2022 across 264 countries. I opted to narrow down my scope to the period from 1820 to 2022, as I deemed two centuries of data to be adequate for my analysis. 
+After running into several obstacles in locating comprehensive datasets, I selected the [dataset](https://github.com/owid/co2-data) provided by Our World in Data, focusing on CO2 and Greenhouse Gas Emissions. This extensive dataset holds 48,058 observations and 79 variables, covering the period from 1750 to 2022 across 264 countries. I opted to narrow down my scope to the period from 1820 to 2022, as I deemed two centuries of data to be adequate for my analysis. 
 
 ### Key Variables
 - **co2:** Annual CO₂ emissions - Annual total emissions of carbon dioxide (CO₂), excluding land-use change, measured in million tonnes.
