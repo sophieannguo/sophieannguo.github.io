@@ -1,6 +1,6 @@
 # Global Climate
-
-# Analyzing Time Series Data: Greenhouse Gas Emissions and Global Climate Dynamics
+# Analyzing Time Series Data:
+# Greenhouse Gas Emissions and Global Climate Dynamics
 
 ### Introduction
 My passion for environmental conservation and sustainable practices has always been a part of my life. This semester, I have the pleasure of taking ENEC 350: Environmental Law and Politics with Law Professor Donald Thomas Hornstein. I have learned about governmental regulations, including landmark legislation like the Comprehensive Environmental Response, Compensation, and Liability Act, as well as pivotal Supreme Court cases. Together, these regulations and law help build some rigidity in demanding positive environmental reform in the United States.
