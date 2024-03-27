@@ -288,3 +288,15 @@ table tr td
 { background: #E5E5DB;
   color: #47433F;
   border-top: 1px solid #FFF;}
+
+.toc {
+  position: fixed;
+  top: 50%; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
+
+.content {
+  margin-left: 200px; /* Adjust to match the width of the TOC */
+}
+
