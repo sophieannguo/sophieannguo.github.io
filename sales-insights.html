@@ -1,1 +1,98 @@
+<!DOCTYPE HTML>
+<html>
 
+<head>
+  <title>Sophie Guo - Projects</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+        <h1><a href="index.html" style="color: dimgrey;">Sophie <span class="logo_colour" style="color: dimgrey;">Guo</span></a></h1>
+          <h2>Information Science & Statistics | UNC Chapel Hill | Honors Carolina Scholar</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          <li><a href="page.html">A Page</a></li>
+          <li class="selected"><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+         <h1>Table of Contents</h1>
+        <ul>
+          <li><a href="#introduction">I. Introduction</a></li>
+          <li><a href="#data">II. Data</a></li>
+          <li><a href="#visualization">III. Visualization</a></li>
+          <li><a href="#final_thoughts">IV. Final Thoughts</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <h1>E-Commerce Sales Analytics: Insights & Business Recommendations</h1>
+      <h2 id="introduction">I. Introduction</h2>
+        <h3>Background</h3>
+    <p>At the core of this project lies the desire to illuminate the complex relationship between global climate dynamics and greenhouse gas emissions. As highlighted by the Intergovernmental Panel on Climate Change, human activities have been the predominant cause in the surge in greenhouse gases within the atmosphere over the past 150 years. Despite these enduring trends spanning centuries, it has only been in the recent decades, notably towards the end of the 20th century, that climate change has garnered global attention, prompting a thorough understanding of its detrimental effects.</p>
+
+    <h3>Tools Used</h3>
+    <ul>
+        <li>RStudio</li>
+        <li>Tableau</li>
+    </ul>
+        <h2 id="data">II. Data</h2>
+        <h3>Sources</h3>
+    <p>I selected the <a href="https://github.com/owid/co2-data">dataset</a> provided by Our World in Data, focusing on CO2 and Greenhouse Gas Emissions. This extensive dataset holds 48,058 observations and 79 variables, covering the period from 1750 to 2022 across 264 countries. I opted to narrow down my scope to the period from 1820 to 2022, as I deemed two centuries of data to be adequate for my analysis.</p>
+
+    <h3>Key Variables</h3>
+    <ul>
+      <li><strong>CO₂:</strong> Annual CO₂ emissions - Annual total emissions of carbon dioxide (CO₂), excluding land-use change, measured in million tonnes.</li>
+        <li><strong>CO₂ per capita:</strong> Annual CO₂ emissions (per capita) - Annual total emissions of carbon dioxide (CO₂), excluding land-use change, measured in tonnes per person.</li>
+        <li><strong>GDP:</strong> Gross domestic product measured in international-$ using 2011 prices to adjust for price changes over time (inflation) and price differences between countries. Calculated by multiplying GDP per capita with population.</li>
+        <li><strong>GHG per capita:</strong> Total greenhouse gas emissions per capita including land-use change and forestry - Emissions are measured in tonnes of carbon dioxide-equivalents per person.</li>
+        <li><strong>Share of global CO₂:</strong> Share of global annual CO₂ emissions - Annual total emissions of carbon dioxide (CO₂), excluding land-use change, measured as a percentage of global emissions of CO₂ in the same year.</li>
+        <li><strong>Temperature change from CO₂:</strong> Change in global mean surface temperature caused by CO₂ emissions - Measured in °C.</li>
+        <li><strong>Temperature change from GHG:</strong> Change in global mean surface temperature caused by greenhouse gas emissions - Measured in °C.</li>
+      <p>Information from <a href="https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv" target="_blank">codebook</a>.</p>
+    </ul>
+        <h3>Data Cleaning</h3>
+        <p>I filtered the year variable to ensure only data spanning from 1820 to 2022 was included. Additionally, I streamlined the information by aggregating years to create a new variable “decade.” This approach aims to improve interpretability and offer more easily digestible insights into long-term trends within the dataset.</p>
+        <h3>CUT-DDV</h3>
+        <p><strong>Context:</strong> This project aims to bring a comprehensive, global view of the climate effects of greenhouse gasses by employing both interactive and static visualizations. It includes visual representations illustrating the trends between economic data and CO2 emissions on a global scale. It also involves the development of spatial visualizations with multiple dimensions of data, allowing exploration of trends spanning two centuries. These visualizations are accessible for interaction via my website or through Tableau Public, enabling users to engage with the data dynamically.</p>
+       <p><strong>User:</strong> These visualizations cater to individuals seeking to gain preliminary insights into global climate trends. They strive for utmost simplicity and clarity, ensuring accessibility to a diverse audience regardless of their technical experience. Thus, they serve as a resource for anyone eager to understand the complexities of climate change in an easily digestible format.</p>
+       <p><strong>Task:</strong> These visualizations showcase global changes dealing with CO2 and greenhouse gas emissions over the past two centuries. For the spatial visualization, users have the flexibility to narrow their search by selecting a specific decade between 1820 and 2022 and choosing either CO2 or greenhouse gasses as their focus. Additionally, they can access specific information about individual countries by hovering over their respective locations on the spatial visualization.</p>
+       <p><strong>Data Types:</strong> This dataset primarily consists of continuous data types, encompassing variables such as GDP, share of global CO2 emissions, CO2 emissions per capita, and temperature change attributed to CO2. Additionally, it contains geographic/spatial data represented by the country variable and temporal data captured through the year and decade variables.</p>
+    </ul>
+        <h2 id="visualization">III. Visualization</h2>
+        <h3>Time-Series Plot</h3>
+   <img src="img/Co2-by-year.JPG" width="550" height="400">
+      <p>Above is a time-series line graph illustrating the trend of total CO2 emissions worldwide. I opted for a line graph due to its effectiveness in illustrating the overall distribution of the extensive dataset. From this graph, it is evident that there has been a substantial increase in CO2 emissions, particularly in the last century, with notable growth observed from around 1950 onwards.</p>
+      <h3>Scatter Plot and Simple Linear Regression</h3>
+   <img src="img/GDP-and-share.JPG" width="400" height="300">
+        <img src="img/GDP-and-share-zoomed.JPG" width="400" height="300">
+      <p>The figures above explore the correlation between individual countries' GDP and their average share of global CO2 emissions. I chose to concentrate on the last 20 years to provide a more accurate representation, considering that a country's economy can undergo significant changes over centuries of data. The top figure encompasses all countries included in the dataset, while bottom figure excludes the top five countries with the highest GDPs. This exclusion offers the audience a clearer understanding of the typical patterns observed across most countries, without the influence of outliers. Through linear regression, we discover that there is a positive relationship between a country’s average GDP and their average share of global CO2 emissions. The relationship depicted in the top figure demonstrates a strong correlation with an R-squared value of 0.88 and a highly significant p-value of < 0.0001. In the bottom figure, the relationship has a R-squared value of 0.75 and p-value of < 0.0001. The inclusion of the trend line is essential to emphasize the central message of the visualization, which is to highlight the positive relationship that exists between these two variables.</p>
+    <h3>Interactive Temporal Heatmap</h3>
+ <div class='tableauPlaceholder' id='viz1711306329866' style='position: relative'><noscript><a href='#'><img alt='Co2 and GHG ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;Global-Temp-Map&#47;Co2andGHG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Global-Temp-Map&#47;Co2andGHG' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;Global-Temp-Map&#47;Co2andGHG&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1711306329866');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p>This visualization illustrates the temperature changes resulting from CO2 and greenhouse gas emissions. I opted for spatial visualization, as I deemed it the most effective method to convey country-specific information and visualize the temperature fluctuations observed over the past two centuries. The visual depiction, characterized by the intensifying shades of red in countries experiencing significant temperature shifts, aligns with viewers' expectations and enhances their perception of the data.</p>
+    <h2 id="final_thoughts">IV. Final Thoughts</h2>
+      <p>During my research process, I encountered a significant challenge regarding missing values in the original dataset. While searching for suitable datasets, I observed that many sources lacked comprehensive information on greenhouse gas emissions from countries over a continuous, long-term period. Some datasets only covered certain countries, while others provided data for recent time frames only. As noted by the <a href="https://e360.yale.edu/features/undercounted-emissions-un-climate-change">Yale School of the Environment</a>, “national inventories reported to the United Nations grossly underestimate many countries’ greenhouse gas emissions.” This underscores the pressing need for improved measurement practices and accountability for accuracy, particularly in addressing the lax reporting standards concerning emissions tracking. </p>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact Us</a></p>
+      <p>Copyright &copy; simple_light | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>
