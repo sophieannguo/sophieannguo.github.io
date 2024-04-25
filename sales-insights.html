@@ -54,17 +54,11 @@
         <h2 id="data">II. Data</h2>
         <h3>Sources</h3>
     <p>I have chosen to utilize the <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?select=olist_order_payments_dataset.csv">dataset</a>  provided by Olist, Brazil's largest department store. Olist's recent achievements have been truly exceptional, earning it recognition as one of the fastest-growing startups globally by Growjo in 2022  (<a href="https://www.metait.us/cases/olist/">Meta</a>) The dataset encompasses information on 100,000 orders placed on their e-commerce platform between 2016 and 2018. This comprehensive dataset comprises nine CSV files, totaling 1,550,922 rows. Within this dataset, one can find details such as consumer and seller locations, purchase amounts, product categories, product ratings, and additional relevant data.</p>
-
-    <h3>Data Schema</h3>
-    <p></p>The image above was obtained on <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?select=olist_order_payments_dataset.csv">Kaggle</a> and illustrates the framework with which the individual datasets are connected through common fields. I performed joins using both Tableau and R-Studio as required to integrate the data effectively.</p>
-      <p> placeholder</p>
-        <h3>Data Cleaning</h3>
-        <p>placeholder</p>
         <h3>CUT-DDV</h3>
-        <p><strong>Context:</strong> placeholder</p>
-       <p><strong>User:</strong> placeholder</p>
-       <p><strong>Task:</strong> placeholder</p>
-       <p><strong>Data Types:</strong> placeholder</p>
+        <p><strong>Context:</strong> This project is exclusively centered on the sales and performance metrics of Olist, specifically focusing on the Brazilian marketplaces and addresses. The sales data is analyzed from various angles, including product popularity, geospatial distribution, and consumer satisfaction. It is important to note that the visual representations within the project only contain two years of data. Consequently, I searched for potential trends on a monthly or quarterly basis, rather than an annual basis. The project is designed with scalability in mind, meaning it could be easily expanded given a greater quantity of data. The interactive dashboard visualizations are accessible through my website or via Tableau Public, enabling users to dynamically engage with the data and explore insights at their convenience.</p>
+       <p><strong>User:</strong> These visualizations are designed to cater to individuals interested in gaining insights into Olist's sales performance. They also may be particularly valuable to aspiring entrepreneurs looking to start a startup or individuals seeking to gain deeper insights into the Brazilian marketplace.</p>
+       <p><strong>Task:</strong> I aimed to create intuitive and user-friendly dashboards that empower users to formulate and answer their own questions. Because I did not have specific queries from stakeholders, I approached the data analysis from multiple perspectives that could be of interest to potential stakeholders. By offering users a wide range of filtering options, I sought to enhance flexibility in visualization interaction, allowing users to customize their experience and delve deeper into the data based on their unique interests and inquiries.</p>
+       <p><strong>Data Types:</strong> This dataset consists of continuous data types, encompassing variables such as payment value and delivery days. I derived delivery days by calculating the days between an order’s purchase time and delivery date. Ordinal data is represented by the order rankings provided by consumers. Nominal data includes variables such as product category, order ID, consumer ID, and seller ID. Additionally, the dataset contains geographic/spatial data represented by city, state, zip code, latitude, and longitude. Temporal data is captured through order delivery date, order purchase time, etc. To facilitate trend analysis, the order purchase time has been aggregated into monthly and quarterly intervals.</p>
     </ul>
         <h2 id="visualization">III. Visualization</h2>
     <h3>Demand & Sales Analysis Dashboard</h3>
